@@ -24,14 +24,61 @@
 <!--Now we will start working in the body of the document. The body holds all of the code and content that will appear as a visual for our audience.-->
 
 <!--Designers refer to this next section as a "Hero Image." The hero image is styled on the style.css page by calling a "class." To replace the hero image, simply place a .jpg file in the same file folder (directory) as this project and name it "hero.jpg." Alternatively, if you are working with a .png, you will need to open the style.css file using your text editor, find the "hero-image" class and change the file type from ".jpg" to ".png."" Browsers will only work with .jpg, .jpeg, or .png images. Since hero images need to stretch across the screen, typically you will want to select an image 1200px in width to allow quick load time yet avoid pixilation.-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
 
-<img src="Theatre.jpg"
+.hero-image {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
 <div class="hero-image">
+  <img src="Theatre.jpg" alt="Theatre">
+
+  <head>
+<style>
+.hero-text h1 {
+  color: rgb(79, 79, 196);
+}
+.hero-text h2 {
+  color: rgb(59, 30, 176)
+}
+</style>
+</head>
   <div class="hero-text">
-      <h1>I am Nate Feldman</h1>
-      <h2>Design Fuego</h2>
+    <h1>I am Nate Feldman</h1>
+    <h2>Design Fuego</h2>
   </div>
 </div>
+
+</body>
+</html>
+
 
 
 <!--We'll use this first section to discuss where you are right now. Where do you go to school and what courses are you taking/enjoying. What majors/minors/certificates are you pursuing? Has this changed? Why? Replace the content between <h3> and </h3> that says "Lorem ipsum" etc -->
